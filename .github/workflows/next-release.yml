@@ -1,13 +1,18 @@
 name: Next Release
 
 on:
-  push:
+  workflow_run:
+    workflows:
+      - Continuous Integration
     branches:
       - main
+    types:
+      - completed
 
 jobs:
   publish:
     runs-on: ubuntu-20.04
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
     steps:
       - uses: shabados/actions/setup-git-identity@release/next
         with:

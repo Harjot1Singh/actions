@@ -1,0 +1,119 @@
+{
+  "commit": "commit",
+  "issue": "issues",
+  "date": "2021-03-16",
+  "version": "1.2.0-next.0",
+  "host": "https://github.com",
+  "owner": "shabados",
+  "repository": "actions",
+  "repoUrl": "https://github.com/shabados/actions",
+  "packageData": {
+    "name": "@shabados/actions",
+    "version": "1.2.0-next.0",
+    "description": "Shabad OS cross-repository actions",
+    "scripts": {
+      "g": "ts-node --files generate-changelog/index.ts",
+      "a": "ts-node --files bump-version/index.ts",
+      "build": "ts-node scripts/build",
+      "lint": "eslint . --ext .js,.jsx,.ts,.tsx --color",
+      "test": "jest --coverage --color --runInBand"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/shabados/actions.git"
+    },
+    "author": { "name": "Shabad OS Team", "email": "team@shabados.com" },
+    "license": "GPL-3.0-or-later",
+    "bugs": { "url": "https://github.com/shabados/actions/issues" },
+    "dependencies": {
+      "@actions/core": "^1.2.6",
+      "@actions/github": "^4.0.0",
+      "@actions/glob": "^0.1.1",
+      "conventional-changelog": "^3.1.24",
+      "conventional-changelog-angular": "^5.0.12",
+      "conventional-recommended-bump": "^6.0.11",
+      "fs-extra": "^9.0.1",
+      "semver": "^7.3.2",
+      "simple-git": "^2.22.0"
+    },
+    "homepage": "https://github.com/shabados/actions#readme",
+    "devDependencies": {
+      "@commitlint/cli": "^8.3.5",
+      "@commitlint/config-angular": "^8.3.4",
+      "@types/conventional-changelog": "^3.1.0",
+      "@types/conventional-changelog-core": "^4.1.1",
+      "@types/conventional-recommended-bump": "^6.0.0",
+      "@types/fs-extra": "^9.0.4",
+      "@types/jest": "^26.0.15",
+      "@types/node": "^14.14.8",
+      "@types/semver": "^7.3.4",
+      "@types/uuid": "^8.3.0",
+      "@typescript-eslint/eslint-plugin": "^4.1.1",
+      "@vercel/ncc": "^0.27.0",
+      "eslint": "^7.9.0",
+      "eslint-config-airbnb-typescript": "^10.0.0",
+      "eslint-plugin-import": "^2.22.0",
+      "eslint-plugin-jest": "^24.0.1",
+      "eslint-plugin-jsx-a11y": "^6.3.1",
+      "eslint-plugin-react": "^7.20.6",
+      "eslint-plugin-react-hooks": "^4.1.2",
+      "eslint-plugin-react-native": "^3.9.1",
+      "eslint-plugin-simple-import-sort": "^5.0.3",
+      "husky": "^4.2.5",
+      "jest": "^26.0.1",
+      "nock": "^13.0.11",
+      "prettier": "^2.1.2",
+      "ts-jest": "^26.4.4",
+      "ts-node": "^9.1.1",
+      "typescript": "^4.0.5",
+      "uuid": "^8.3.1",
+      "yaml": "^1.10.0"
+    },
+    "readme": "ERROR: No README data found!",
+    "_id": "@shabados/actions@1.2.0-next.0"
+  },
+  "gitSemverTags": ["v1.1.0-next.2", "v1.1.0-next.1"],
+  "linkReferences": true,
+  "commitGroups": [
+    {
+      "title": "Features",
+      "commits": [
+        {
+          "type": "Features",
+          "scope": "publish-github",
+          "subject": "use tag name as release name",
+          "merge": null,
+          "header": "feat(publish-github): use tag name as release name",
+          "body": null,
+          "footer": null,
+          "notes": [],
+          "references": [],
+          "mentions": [],
+          "revert": null,
+          "hash": "cecf22aa673318360ce80032392cd25008248ae9",
+          "gitTags": " (upstream/main, origin/main)",
+          "committerDate": "2021-03-14",
+          "shortHash": "cecf22a",
+          "raw": {
+            "type": "feat",
+            "scope": "publish-github",
+            "subject": "use tag name as release name",
+            "merge": null,
+            "header": "feat(publish-github): use tag name as release name",
+            "body": null,
+            "footer": null,
+            "notes": [],
+            "references": [],
+            "mentions": [],
+            "revert": null,
+            "hash": "cecf22aa673318360ce80032392cd25008248ae9",
+            "gitTags": " (upstream/main, origin/main)",
+            "committerDate": "2021-03-14"
+          }
+        }
+      ]
+    }
+  ],
+  "noteGroups": [],
+  "isPatch": false
+}

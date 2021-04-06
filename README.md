@@ -7,8 +7,8 @@ Shabad OS cross-repository GitHub actions.
 [![Release][release-image]][release-url]
 [![Next Release][next-image]][next-url]
 
-- [Shabad OS Actions](#shabad-os-actions)
-  - [Actions](#actions)
+- [Actions](#actions)
+    - [Actions](#actions-1)
   - [Usage](#usage)
   - [Todo](#todo)
     - [Test Process](#test-process)
@@ -19,6 +19,7 @@ Shabad OS cross-repository GitHub actions.
 
 - [Setup Git Identity](setup-git-identity/): sets up the Git user name and email address.
 - [Semantic Version Bump](bump-version/): figures out and bumps version based on commit history, supporting a sensible prerelease scheme.
+- [Generate Changelog](generate-changelog/): generates and commits the latest `CHANGELOG.md` based on conventional commits.
 - [Publish Branch](publish-branch/): releases the current working directory as a release branch, using the latest git tag.
 - [Publish Github](publish-github/): pushes any committed changes back to GitHub, creates a release using the latest git tag, and uploads any supplied assets to the release.
 
@@ -76,7 +77,7 @@ all repo specific or should we at least call lint test:e2e test:integration test
 - dockerhub + github docker regsitry
 - GH releases - mandatory
 
-[release-image]: https://img.shields.io/github/workflow/status/shabados/actions/Continuous%20Integration/main.svg?label=release
-[release-url]: https://github.com/shabados/actions/actions?query=workflow%3A%22Continuous+Integration%22+branch%3Amain
-[next-image]: https://img.shields.io/github/workflow/status/shabados/actions/Continuous%20Integration/main.svg?label=next%20release
-[next-url]: https://github.com/shabados/actions/actions?query=workflow%3A%22Continuous+Integration%22+branch%3Amain
+[release-image]: https://img.shields.io/github/workflow/status/shabados/actions/Release/main.svg?label=release
+[release-url]: https://github.com/shabados/actions/actions?query=workflow%3A%22Release%22+branch%3Amain
+[next-image]: https://img.shields.io/github/workflow/status/shabados/actions/Next%20Release/main.svg?label=next%20release
+[next-url]: https://github.com/shabados/actions/actions?query=workflow%3A%22Next+Release%22+branch%3Amain
